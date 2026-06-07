@@ -5,5 +5,5 @@ class Rectangle:
         self.breadth = breadth 
     
     def __iter__(self):
-        yield self.length
-        yield self.breadth
+        yield {'length': self.length}
+        yield {'breadth': self.breadth}
